@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="EventDiv">
+
+    <h1 id="demo"></h1>
+    <p id="time"></p>
+    <img id="pic" src="dice-1.png" style=" height: 100px; width: 100px; ">
+  
+  </div>
+
+  <div class="button-container">
+    <button onclick="klick1()" class = "hover-effect" >Change Bg</button>
+    <button onclick="klick2()" class = "hover-effect" >Good vibes</button>
+    <button onclick="klick3()" class = "hover-effect" >Time</button>
+    <button onclick="klick4()" class = "hover-effect" >Change picure</button>
+    <button class = "hover-effect" >Hide picture</button>
+    <button class = "hover-effect" >Show Picture</button>
+  
+  </div>
+
+
+
+</body>
+<script>
+    
+    function klick1()
+    {
+        document.body.style.backgroundColor=("green");
+    }
+    //var goodvibes = document.createElement("h1");
+    //goodvibes.innerHTML=("aaaaaaa");
+    
+    var h1a = document.querySelector("#demo");
+    function klick2()
+    {
+        h1a.innerHTML=("aaaa");
+    }
+
+    //var date = document.createElement("p");
+    //date.innerHTML=(Date());
+    var time1 = document.getElementById("time");
+
+    function klick3()
+    {
+        time1.innerHTML=(Date());
+    }
+    var bild = document.querySelector("#img");
+    function klick4()
+    {
+        document.bild.src="dice-6.png";
+    }
+
+</script>
+</html>
